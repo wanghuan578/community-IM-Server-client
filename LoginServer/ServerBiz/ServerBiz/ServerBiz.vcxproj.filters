@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="internal">
+      <UniqueIdentifier>{2c9dcf2c-e813-42a3-899a-828757dfecda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerBiz">
+      <UniqueIdentifier>{a6fdae5e-5a8d-4023-8441-e8e498a3c259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift">
+      <UniqueIdentifier>{dad8b630-12b9-4eb0-a0ab-d5779237e1e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socketliet">
+      <UniqueIdentifier>{adb86588-eed0-4c7d-827b-842718f70131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socketliet\include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Robin">
+      <UniqueIdentifier>{76aa0cb1-26a9-4434-9cf7-67e25946f49b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="internal\MainStageHandler.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\MessageMapping.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\TcpServerManager.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerBiz\ServerBiz.h">
+      <Filter>ServerBiz</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ServerBiz</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ServerBiz</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\LoginServerManager.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\LoginServerHandler.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\CommonTypes.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Robin\ServerData.h">
+      <Filter>Robin</Filter>
+    </ClInclude>
+    <ClInclude Include="Robin\WeightedRound.h">
+      <Filter>Robin</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\ClientControlBaseAdaptor.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\ServerControlBaseAdaptor.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\ServiceHandlerList.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\center_server_constants.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\center_server_types.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\common_constants.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\common_types.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\login_server_constants.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\login_server_types.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\UserHandlerList.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\dbproxy_server_constants.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\dbproxy_server_types.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\Serialize.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="internal\MainStageHandler.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+    <ClCompile Include="internal\TcpServerManager.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerBiz\ServerBiz.cpp">
+      <Filter>ServerBiz</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>ServerBiz</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ServerBiz</Filter>
+    </ClCompile>
+    <ClCompile Include="internal\LoginServerHandler.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\center_server_constants.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\center_server_types.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\common_constants.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\common_types.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\login_server_constants.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\login_server_types.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\dbproxy_server_constants.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\dbproxy_server_types.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="internal\Serialize.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Debug\soli_100usd.lib">
+      <Filter>Socketliet</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

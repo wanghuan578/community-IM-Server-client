@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="RPC Client Demo.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RPC Client DemoDlg.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessMessage.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC Client Demo.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC Client DemoDlg.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessMessage.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RPC Client Demo.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\RPCClientDemo.rc2">
+      <Filter>Resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{9c68907e-4345-40c6-9e7a-dd031e53e750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{08e6b85e-a044-46b7-b21e-e0f4ebeba8ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RPC Client Demo.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

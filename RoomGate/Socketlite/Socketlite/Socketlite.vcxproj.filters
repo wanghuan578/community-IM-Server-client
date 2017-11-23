@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="thrift">
+      <UniqueIdentifier>{9583072d-3d67-460e-8b3b-5f4d5bc71e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift\protocol">
+      <UniqueIdentifier>{c136be73-bd0a-4949-a3a4-bc8e56bc128b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift\transport">
+      <UniqueIdentifier>{cfc1ca58-e5ea-45bb-b950-c9a752da48a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="thrift\cxxfunctional.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\TApplicationException.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\TDispatchProcessor.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\Thrift.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\thrift-config.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\TLogging.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\TProcessor.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\TReflectionLocal.h">
+      <Filter>thrift</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\transport\TBufferTransports.h">
+      <Filter>thrift\transport</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\transport\TTransport.h">
+      <Filter>thrift\transport</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\transport\TTransportException.h">
+      <Filter>thrift\transport</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\protocol\TBinaryProtocol.h">
+      <Filter>thrift\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\protocol\TProtocol.h">
+      <Filter>thrift\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\protocol\TProtocolException.h">
+      <Filter>thrift\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift\protocol\TVirtualProtocol.h">
+      <Filter>thrift\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Alloc.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_UUID.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Application.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_ByteBuffer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Circular_ByteBuffer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Circular_Queue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_CircularBuffer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_CircularQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Config.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_AES.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_Base64.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_BaseN.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_Cipher.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_CRTRand.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_Hash.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_Hex.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_MD5.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_RaknetRand.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_Rand.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Crypto_SHA1.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_DataType.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Disruptor_Event.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Disruptor_Handler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Disruptor_Interface.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Disruptor_LockFreeQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Disruptor_SingleWriteQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Fsm_Manager.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Hash_Fun.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Logger.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_LRUHashtable.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_ObjectPool.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_OS_API.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_OS_File.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Queue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Random.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Rpc_Message.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Rpc_Thrift_BinaryProtocol.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Rpc_Thrift_BufferTransport.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Seda_Event.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Seda_EventQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Seda_Interface.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Seda_Stage.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Seda_StageHandler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Seda_StageThread.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Seda_Timer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Seda_TimerQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_SharedPtr.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Singleton.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_CommonAPI.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Epoll_Runner.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Handler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_INET_Addr.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Iocp_Handler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Iocp_Message_Handler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Iocp_Runner.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Kqueue_Runner.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Message_Handler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Poll_Runner.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Runner.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Runner_Group.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Select_Runner.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_SendControl_Handler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_SendControl_HandlerManager.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_Source.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_TcpClient.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_TcpClient_AutoConnect.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_TcpServer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_TcpServer_Handler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_UdpSource.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Socket_UdpSource_Handler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Sync_Atomic.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Sync_Condition.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Sync_Guard.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Sync_Macros.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Sync_Mutex.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Sync_RWMutex.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Sync_Semaphore.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Sync_SpinMutex.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Task.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Task_Condition.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Task_MultiQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Task_MultiQueue_Condition.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Test.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Thread.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Thread_Group.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Timer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Timer_List_Clock.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Timer_List_Time.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Timer_Queue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_TLS.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Utility_CircularQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Utility_LockFreeQueue .h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Utility_RingBuffer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Utility_TwoLockQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SL_Utility_TwoPointerSwapQueue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="DB_CommonAPI.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="thrift\TApplicationException.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\Thrift.cpp">
+      <Filter>thrift</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\transport\TBufferTransports.cpp">
+      <Filter>thrift\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift\transport\TTransportException.cpp">
+      <Filter>thrift\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Crypto_AES.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Crypto_Base64.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Crypto_CRTRand.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Crypto_Hex.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Crypto_MD5.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Crypto_RaknetRand.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Crypto_SHA1.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_OS_API.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_OS_File.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Random.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Seda_TimerQueue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Socket_CommonAPI.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Socket_Handler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Socket_INET_Addr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Socket_Iocp_Message_Handler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Socket_Message_Handler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Socket_SendControl_HandlerManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Socket_TcpClient_AutoConnect.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SL_Thread_Group.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="DB_CommonAPI.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

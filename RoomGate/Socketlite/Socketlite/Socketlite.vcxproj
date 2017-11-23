@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F985F8D2-10BC-497D-B1C9-405A042EB9E8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Socketlite</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\;$(ProjectDir)\thrift;D:\Project\Develop\Library\bin\boost\boost_1_54_0;D:\Project\Develop\Library\bin\openssl\include;$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <TargetName>soli_100usd</TargetName>
+    <OutDir>..\..\ServerBiz\Debug</OutDir>
+    <LibraryPath>D:\Project\Develop\Library\bin\openssl\lib\vc10;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)\;$(ProjectDir)\thrift;D:\Project\library\boost_1_63_0;D:\Project\library\openssl\include;C:\Program Files\MySQL\MySQL Connector.C 6.1\include;$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <TargetName>soli_100usd</TargetName>
+    <OutDir>..\..\ServerBiz\Debug</OutDir>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;SOCKETLITE_USE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;SOCKETLITE_USE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DB_CommonAPI.h" />
+    <ClInclude Include="SL_Alloc.h" />
+    <ClInclude Include="SL_Application.h" />
+    <ClInclude Include="SL_ByteBuffer.h" />
+    <ClInclude Include="SL_CircularBuffer.h" />
+    <ClInclude Include="SL_CircularQueue.h" />
+    <ClInclude Include="SL_Circular_ByteBuffer.h" />
+    <ClInclude Include="SL_Circular_Queue.h" />
+    <ClInclude Include="SL_Config.h" />
+    <ClInclude Include="SL_Crypto.h" />
+    <ClInclude Include="SL_Crypto_AES.h" />
+    <ClInclude Include="SL_Crypto_Base64.h" />
+    <ClInclude Include="SL_Crypto_BaseN.h" />
+    <ClInclude Include="SL_Crypto_Cipher.h" />
+    <ClInclude Include="SL_Crypto_CRTRand.h" />
+    <ClInclude Include="SL_Crypto_Hash.h" />
+    <ClInclude Include="SL_Crypto_Hex.h" />
+    <ClInclude Include="SL_Crypto_MD5.h" />
+    <ClInclude Include="SL_Crypto_RaknetRand.h" />
+    <ClInclude Include="SL_Crypto_Rand.h" />
+    <ClInclude Include="SL_Crypto_SHA1.h" />
+    <ClInclude Include="SL_DataType.h" />
+    <ClInclude Include="SL_Disruptor_Event.h" />
+    <ClInclude Include="SL_Disruptor_Handler.h" />
+    <ClInclude Include="SL_Disruptor_Interface.h" />
+    <ClInclude Include="SL_Disruptor_LockFreeQueue.h" />
+    <ClInclude Include="SL_Disruptor_SingleWriteQueue.h" />
+    <ClInclude Include="SL_Fsm_Manager.h" />
+    <ClInclude Include="SL_Hash_Fun.h" />
+    <ClInclude Include="SL_Logger.h" />
+    <ClInclude Include="SL_LRUHashtable.h" />
+    <ClInclude Include="SL_ObjectPool.h" />
+    <ClInclude Include="SL_OS_API.h" />
+    <ClInclude Include="SL_OS_File.h" />
+    <ClInclude Include="SL_Queue.h" />
+    <ClInclude Include="SL_Random.h" />
+    <ClInclude Include="SL_Rpc_Message.h" />
+    <ClInclude Include="SL_Rpc_Thrift_BinaryProtocol.h" />
+    <ClInclude Include="SL_Rpc_Thrift_BufferTransport.h" />
+    <ClInclude Include="SL_Seda_Event.h" />
+    <ClInclude Include="SL_Seda_EventQueue.h" />
+    <ClInclude Include="SL_Seda_Interface.h" />
+    <ClInclude Include="SL_Seda_Stage.h" />
+    <ClInclude Include="SL_Seda_StageHandler.h" />
+    <ClInclude Include="SL_Seda_StageThread.h" />
+    <ClInclude Include="SL_Seda_Timer.h" />
+    <ClInclude Include="SL_Seda_TimerQueue.h" />
+    <ClInclude Include="SL_SharedPtr.h" />
+    <ClInclude Include="SL_Singleton.h" />
+    <ClInclude Include="SL_Socket_CommonAPI.h" />
+    <ClInclude Include="SL_Socket_Epoll_Runner.h" />
+    <ClInclude Include="SL_Socket_Handler.h" />
+    <ClInclude Include="SL_Socket_INET_Addr.h" />
+    <ClInclude Include="SL_Socket_Iocp_Handler.h" />
+    <ClInclude Include="SL_Socket_Iocp_Message_Handler.h" />
+    <ClInclude Include="SL_Socket_Iocp_Runner.h" />
+    <ClInclude Include="SL_Socket_Kqueue_Runner.h" />
+    <ClInclude Include="SL_Socket_Message_Handler.h" />
+    <ClInclude Include="SL_Socket_Poll_Runner.h" />
+    <ClInclude Include="SL_Socket_Runner.h" />
+    <ClInclude Include="SL_Socket_Runner_Group.h" />
+    <ClInclude Include="SL_Socket_Select_Runner.h" />
+    <ClInclude Include="SL_Socket_SendControl_Handler.h" />
+    <ClInclude Include="SL_Socket_SendControl_HandlerManager.h" />
+    <ClInclude Include="SL_Socket_Source.h" />
+    <ClInclude Include="SL_Socket_TcpClient.h" />
+    <ClInclude Include="SL_Socket_TcpClient_AutoConnect.h" />
+    <ClInclude Include="SL_Socket_TcpServer.h" />
+    <ClInclude Include="SL_Socket_TcpServer_Handler.h" />
+    <ClInclude Include="SL_Socket_UdpSource.h" />
+    <ClInclude Include="SL_Socket_UdpSource_Handler.h" />
+    <ClInclude Include="SL_Sync_Atomic.h" />
+    <ClInclude Include="SL_Sync_Condition.h" />
+    <ClInclude Include="SL_Sync_Guard.h" />
+    <ClInclude Include="SL_Sync_Macros.h" />
+    <ClInclude Include="SL_Sync_Mutex.h" />
+    <ClInclude Include="SL_Sync_RWMutex.h" />
+    <ClInclude Include="SL_Sync_Semaphore.h" />
+    <ClInclude Include="SL_Sync_SpinMutex.h" />
+    <ClInclude Include="SL_Task.h" />
+    <ClInclude Include="SL_Task_Condition.h" />
+    <ClInclude Include="SL_Task_MultiQueue.h" />
+    <ClInclude Include="SL_Task_MultiQueue_Condition.h" />
+    <ClInclude Include="SL_Test.h" />
+    <ClInclude Include="SL_Thread.h" />
+    <ClInclude Include="SL_Thread_Group.h" />
+    <ClInclude Include="SL_Timer.h" />
+    <ClInclude Include="SL_Timer_List_Clock.h" />
+    <ClInclude Include="SL_Timer_List_Time.h" />
+    <ClInclude Include="SL_Timer_Queue.h" />
+    <ClInclude Include="SL_TLS.h" />
+    <ClInclude Include="SL_Utility_CircularQueue.h" />
+    <ClInclude Include="SL_Utility_LockFreeQueue .h" />
+    <ClInclude Include="SL_Utility_RingBuffer.h" />
+    <ClInclude Include="SL_Utility_TwoLockQueue.h" />
+    <ClInclude Include="SL_Utility_TwoPointerSwapQueue.h" />
+    <ClInclude Include="SL_UUID.h" />
+    <ClInclude Include="thrift\cxxfunctional.h" />
+    <ClInclude Include="thrift\protocol\TBinaryProtocol.h" />
+    <ClInclude Include="thrift\protocol\TProtocol.h" />
+    <ClInclude Include="thrift\protocol\TProtocolException.h" />
+    <ClInclude Include="thrift\protocol\TVirtualProtocol.h" />
+    <ClInclude Include="thrift\TApplicationException.h" />
+    <ClInclude Include="thrift\TDispatchProcessor.h" />
+    <ClInclude Include="thrift\thrift-config.h" />
+    <ClInclude Include="thrift\Thrift.h" />
+    <ClInclude Include="thrift\TLogging.h" />
+    <ClInclude Include="thrift\TProcessor.h" />
+    <ClInclude Include="thrift\transport\TBufferTransports.h" />
+    <ClInclude Include="thrift\transport\TTransport.h" />
+    <ClInclude Include="thrift\transport\TTransportException.h" />
+    <ClInclude Include="thrift\TReflectionLocal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DB_CommonAPI.cpp" />
+    <ClCompile Include="SL_Application.cpp" />
+    <ClCompile Include="SL_Crypto_AES.cpp" />
+    <ClCompile Include="SL_Crypto_Base64.cpp" />
+    <ClCompile Include="SL_Crypto_CRTRand.cpp" />
+    <ClCompile Include="SL_Crypto_Hex.cpp" />
+    <ClCompile Include="SL_Crypto_MD5.cpp" />
+    <ClCompile Include="SL_Crypto_RaknetRand.cpp" />
+    <ClCompile Include="SL_Crypto_SHA1.cpp" />
+    <ClCompile Include="SL_OS_API.cpp" />
+    <ClCompile Include="SL_OS_File.cpp" />
+    <ClCompile Include="SL_Random.cpp" />
+    <ClCompile Include="SL_Seda_TimerQueue.cpp" />
+    <ClCompile Include="SL_Socket_CommonAPI.cpp" />
+    <ClCompile Include="SL_Socket_Handler.cpp" />
+    <ClCompile Include="SL_Socket_INET_Addr.cpp" />
+    <ClCompile Include="SL_Socket_Iocp_Message_Handler.cpp" />
+    <ClCompile Include="SL_Socket_Message_Handler.cpp" />
+    <ClCompile Include="SL_Socket_SendControl_HandlerManager.cpp" />
+    <ClCompile Include="SL_Socket_TcpClient_AutoConnect.cpp" />
+    <ClCompile Include="SL_Thread_Group.cpp" />
+    <ClCompile Include="thrift\TApplicationException.cpp" />
+    <ClCompile Include="thrift\Thrift.cpp" />
+    <ClCompile Include="thrift\transport\TBufferTransports.cpp" />
+    <ClCompile Include="thrift\transport\TTransportException.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AD006C9A-2646-4B93-9D22-85DFC7394875}</ProjectGuid>
+    <RootNamespace>RPCClientDemo</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>ClientBiz</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\thrift;$(ProjectDir)\internal;$(ProjectDir)\..\..\libThrift\src\;$(ProjectDir)\..\..\libThrift\src\thrift;$(ProjectDir)\ClientBiz;$(ProjectDir)\..\..\Socketlite\Socketlite;D:\Project\library\boost_1_63_0;D:\Project\library\openssl-1.0.1u\inc32;$(IncludePath)</IncludePath>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <LibraryPath>$(SolutionDir)\..\ClientBiz\Debug;D:\Project\library\boost_1_63_0\stage\lib;$(ProjectDir)\..\Debug;D:\Project\library\openssl-1.0.1u\out32dll;$(LibraryPath)</LibraryPath>
+    <OutDir>..\..\ClientMain\Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;SOCKETLITE_USE_THRIFT;CLIENT_BIZ_DLL_EXPORT;SOCKETLITE_USE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libthrift.lib;libeay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ResourceOutputFileName>
+      </ResourceOutputFileName>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientBiz\ClientBiz.h" />
+    <ClInclude Include="Internal\ClientControlBaseAdaptor.h" />
+    <ClInclude Include="Internal\ClientHandlerList.h" />
+    <ClInclude Include="Internal\CommonTypes.h" />
+    <ClInclude Include="Internal\LoginServerHandler.h" />
+    <ClInclude Include="Internal\LoginServerManager.h" />
+    <ClInclude Include="Internal\MainStageHandler.h" />
+    <ClInclude Include="Internal\MessageMapping.h" />
+    <ClInclude Include="Internal\RoomGateHandler.h" />
+    <ClInclude Include="Internal\RoomGateManager.h" />
+    <ClInclude Include="Internal\Serialize.h" />
+    <ClInclude Include="Internal\TcpClientManager.h" />
+    <ClInclude Include="Thrift\common_constants.h" />
+    <ClInclude Include="Thrift\common_types.h" />
+    <ClInclude Include="Thrift\login_server_constants.h" />
+    <ClInclude Include="Thrift\login_server_types.h" />
+    <ClInclude Include="Thrift\room_gate_constants.h" />
+    <ClInclude Include="Thrift\room_gate_types.h" />
+    <ClInclude Include="Thrift\room_server_constants.h" />
+    <ClInclude Include="Thrift\room_server_types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientBiz\ClientBiz.cpp" />
+    <ClCompile Include="Internal\LoginServerHandler.cpp" />
+    <ClCompile Include="Internal\MainStageHandler.cpp" />
+    <ClCompile Include="Internal\RoomGateHandler.cpp" />
+    <ClCompile Include="Internal\Serialize.cpp" />
+    <ClCompile Include="Internal\TcpClientManager.cpp" />
+    <ClCompile Include="Thrift\common_constants.cpp" />
+    <ClCompile Include="Thrift\common_types.cpp" />
+    <ClCompile Include="Thrift\login_server_constants.cpp" />
+    <ClCompile Include="Thrift\login_server_types.cpp" />
+    <ClCompile Include="Thrift\room_gate_constants.cpp" />
+    <ClCompile Include="Thrift\room_gate_types.cpp" />
+    <ClCompile Include="Thrift\room_server_constants.cpp" />
+    <ClCompile Include="Thrift\room_server_types.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="RPC Client Demo.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

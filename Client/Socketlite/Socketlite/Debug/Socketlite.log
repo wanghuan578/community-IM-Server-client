@@ -1,0 +1,76 @@
+﻿生成启动时间为 2017/5/30 16:45:57。
+     1>项目“D:\Project\community\windows\Client\Socketlite\Socketlite\Socketlite.vcxproj”在节点 3 上(build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output 目录未以斜杠结尾。此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+     1>InitializeBuildStatus:
+         正在创建“Debug\Socketlite.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         e:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D SOCKETLITE_USE_OPENSSL /D SOCKETLITE_USE_THRIFT /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SL_Application.cpp SL_Crypto_AES.cpp SL_Crypto_Base64.cpp SL_Crypto_CRTRand.cpp SL_Crypto_Hex.cpp SL_Crypto_MD5.cpp SL_Crypto_RaknetRand.cpp SL_Crypto_SHA1.cpp SL_OS_API.cpp SL_OS_File.cpp SL_Random.cpp SL_Seda_TimerQueue.cpp SL_Socket_CommonAPI.cpp SL_Socket_Handler.cpp SL_Socket_INET_Addr.cpp SL_Socket_Iocp_Message_Handler.cpp SL_Socket_Message_Handler.cpp SL_Socket_SendControl_HandlerManager.cpp SL_Socket_TcpClient_AutoConnect.cpp SL_Thread_Group.cpp
+         SL_Thread_Group.cpp
+         SL_Socket_TcpClient_AutoConnect.cpp
+         SL_Socket_SendControl_HandlerManager.cpp
+         SL_Socket_Message_Handler.cpp
+         SL_Socket_Iocp_Message_Handler.cpp
+         SL_Socket_INET_Addr.cpp
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_socket_inet_addr.cpp(131): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+         SL_Socket_Handler.cpp
+         SL_Socket_CommonAPI.cpp
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_socket_commonapi.cpp(612): warning C4244: “参数”: 从“uint64”转换到“DWORD”，可能丢失数据
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_socket_commonapi.cpp(655): warning C4996: '_i64toa': This function or variable may be unsafe. Consider using _i64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(453) : 参见“_i64toa”的声明
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_socket_commonapi.cpp(666): warning C4996: '_ui64toa': This function or variable may be unsafe. Consider using _ui64toa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(455) : 参见“_ui64toa”的声明
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_socket_commonapi.cpp(783): warning C4244: “=”: 从“__time64_t”转换到“long”，可能丢失数据
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_socket_commonapi.cpp(1131): warning C4244: “参数”: 从“int64”转换到“u_long”，可能丢失数据
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_socket_commonapi.cpp(1145): warning C4244: “参数”: 从“int64”转换到“u_long”，可能丢失数据
+         SL_Seda_TimerQueue.cpp
+         SL_Random.cpp
+         SL_OS_File.cpp
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_os_file.cpp(18): warning C4996: '_open': This function or variable may be unsafe. Consider using _sopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 10.0\vc\include\io.h(240) : 参见“_open”的声明
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_os_file.cpp(32): warning C4996: '_creat': This function or variable may be unsafe. Consider using _sopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 10.0\vc\include\io.h(189) : 参见“_creat”的声明
+         SL_OS_API.cpp
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_os_api.cpp(21): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_vsnprintf”的声明
+     1>d:\project\community\windows\client\socketlite\socketlite\sl_os_api.cpp(160): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+         SL_Crypto_SHA1.cpp
+         SL_Crypto_RaknetRand.cpp
+         SL_Crypto_MD5.cpp
+         SL_Crypto_Hex.cpp
+         SL_Crypto_CRTRand.cpp
+         SL_Crypto_Base64.cpp
+         SL_Crypto_AES.cpp
+         SL_Application.cpp
+         正在生成代码...
+       Lib:
+         e:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\ClientBiz\Debug\soli_100usd.lib" /NOLOGO Debug\SL_Application.obj
+         Debug\SL_Crypto_AES.obj
+         Debug\SL_Crypto_Base64.obj
+         Debug\SL_Crypto_CRTRand.obj
+         Debug\SL_Crypto_Hex.obj
+         Debug\SL_Crypto_MD5.obj
+         Debug\SL_Crypto_RaknetRand.obj
+         Debug\SL_Crypto_SHA1.obj
+         Debug\SL_OS_API.obj
+         Debug\SL_OS_File.obj
+         Debug\SL_Random.obj
+         Debug\SL_Seda_TimerQueue.obj
+         Debug\SL_Socket_CommonAPI.obj
+         Debug\SL_Socket_Handler.obj
+         Debug\SL_Socket_INET_Addr.obj
+         Debug\SL_Socket_Iocp_Message_Handler.obj
+         Debug\SL_Socket_Message_Handler.obj
+         Debug\SL_Socket_SendControl_HandlerManager.obj
+         Debug\SL_Socket_TcpClient_AutoConnect.obj
+         Debug\SL_Thread_Group.obj
+     1>SL_Application.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+         Socketlite.vcxproj -> D:\Project\community\windows\Client\Socketlite\Socketlite\..\..\ClientBiz\Debug\soli_100usd.lib
+       FinalizeBuildStatus:
+         正在删除文件“Debug\Socketlite.unsuccessfulbuild”。
+         正在对“Debug\Socketlite.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Project\community\windows\Client\Socketlite\Socketlite\Socketlite.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:01:52.90
